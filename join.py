@@ -5,7 +5,6 @@ If you have found a bug, create issue.
 Attention: Bot must be administrator in channel or supergroup for getting status.
 '''
 
-
 import telebot
 from telebot import types
 from config import *
