@@ -7,7 +7,7 @@ bot = telebot.TeleBot(TOKEN)
 def buttons():
 	markup = types.InlineKeyboardMarkup()
 	markup.add(types.InlineKeyboardButton(text='Channel Name', url=channel_link)
-	markup.add(types.InlineKeyboardButton(text='Check', callback_data='check'))
+	markup.add(types.InlineKeyboardButton(text='Check', callback_data='check')
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
