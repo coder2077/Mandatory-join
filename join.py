@@ -21,7 +21,7 @@ def send_welcome(message):
 
 @bot.callback_query_handler(func = lambda query: query.data == "check")
 def check(query):
-	status = bot.get_chat_member(chat_id=my_channel_id, user_id=query.from_user.id).status
+	status = bot.get_chat_member(chat_id=channel_id, user_id=query.from_user.id).status
 	print(status)
 	if status != 'left':
 		bot.edit_message_text(chat_id = query.message.chat.id, message_id=query.message.message_id, text="Thank you")
